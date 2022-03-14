@@ -4,10 +4,10 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * We have created this test method to check the sad mood.
+ * We have created this test method to check the mood.
+ * If we provide the string of happy then the method should return happy
  * If we provide the string of sad then the method should return sad.
- * We have used the assert equals to check if the method o/p is sad.
- * @author Tom
+ * We have used the assert equals to check if the method o/p is happy or sad.
  *
  */
 public class MoodAnalyserTest {
