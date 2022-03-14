@@ -4,10 +4,11 @@ package com.moodanalyser;
 /**
  * PRODECURE
  * 
- * We Created this class to check the mood Happy , Sad or Any mood
- * We Created a method analyseMood that will take a string input and return the moods.
- * Created default and parameterized constructor and passed message through constructor
- * Handle Exception if user provide invalid Mood
+ *1. We Created this class to check the mood Happy , Sad or Any mood
+ *2. We Created a method analyseMood that will take a string input and return the moods.
+ *3. Created default and parameterized constructor and passed message through constructor
+ *4. Handle Exception if user provide invalid Mood
+ *5. Defined custom exception 
  */
 public class MoodAnalyzer {
 	/*
@@ -50,15 +51,17 @@ public class MoodAnalyzer {
 	 */
 	
 	
-	public String analyseMood() {
+	public String analyseMood() throws MoodAnalyseException{
+		try {
 		if (message.toLowerCase().contains("happy")) {
 			return "HAPPY";
 		} else if (message.toLowerCase().contains("sad")) {
 			return "SAD";
-		} else if(message.toLowerCase().contains("any")){
+		} else {
 			return "HAPPY";
-		}else {
-			return null;
+		}
+		}catch(NullPointerException ex) {
+			throw new MoodAnalyseException("Invalid Mood");
 		}
 	}
 }
