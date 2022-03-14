@@ -7,6 +7,7 @@ package com.moodanalyser;
  * We Created this class to check the mood Happy , Sad or Any mood
  * We Created a method analyseMood that will take a string input and return the moods.
  * Created default and parameterized constructor and passed message through constructor
+ * Handle Exception if user provide invalid Mood
  */
 public class MoodAnalyzer {
 	/*
@@ -43,6 +44,7 @@ public class MoodAnalyzer {
 	 * 1. We will convert the message to lower case and check it the string contains happy or sad word in it.
 	 * Checking the mood and return Happy or Sad mood.
 	 * 2. if Any mood then it will return Happy 
+	 * 3. handle exception if user provide Invalid mood
 	 * @param message -  passing the string message from the method.
 	 * @return - will return the mood Happy or Sad 
 	 */
