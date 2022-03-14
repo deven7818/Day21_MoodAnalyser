@@ -48,7 +48,7 @@ public class MoodAnalyzer {
 	 */
 	
 	
-	public String analyseMood(String message) {
+	public String analyseMood() {
 		if (message.toLowerCase().contains("happy")) {
 			return "HAPPY";
 		} else if (message.toLowerCase().contains("sad")) {

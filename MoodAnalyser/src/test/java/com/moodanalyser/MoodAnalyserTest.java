@@ -15,22 +15,10 @@ public class MoodAnalyserTest {
 	 */
 	MoodAnalyzer mood = new MoodAnalyzer();
 	
-	/**
-	 * method meeageSadMood to check mood 
-	 * it returns Sad mood as we pass sad mood
-	 */
 	@Test
-	public void messageSadMood() {
-		String result = mood.analyseMood("I am in Sad mood" );
-		Assert.assertEquals("SAD", result);
-	}
-	/**
-	 * method messageAnyMood to check mood
-	 * it will return Happy if any mood 
-	 */
-	@Test
-	public void messageAnyMood() {
-		String result = mood.analyseMood("I am in Any mood" );
+	public void messageHappyMood() {
+		mood.setMessage("I am in Happy Mood");
+		String result = mood.analyseMood();
 		Assert.assertEquals("HAPPY", result);
 	}
 
