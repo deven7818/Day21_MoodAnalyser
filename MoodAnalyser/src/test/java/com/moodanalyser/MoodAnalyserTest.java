@@ -55,5 +55,23 @@ public class MoodAnalyserTest {
 		String result = mood.analyseMood();
 		Assert.assertEquals("Invalid Mood", result);
 	}
+	
+	/**
+	 *method nullShouldReturHappy will return Happy when null value is given 
+	 */
+	@Test
+	public void nullShouldReturnHappy() {
+		mood.setMessage(null);
+		String result = mood.analyseMood();
+		Assert.assertEquals("HAPPY", result);
+	}
 
 }
+
+
+
+
+
+
+
+
