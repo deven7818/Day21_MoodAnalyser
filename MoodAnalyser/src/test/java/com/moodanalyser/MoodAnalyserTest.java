@@ -24,4 +24,14 @@ public class MoodAnalyserTest {
 		String result = mood.analyseMood("I am in Sad mood" );
 		Assert.assertEquals("SAD", result);
 	}
+	/**
+	 * method messageAnyMood to check mood
+	 * it will return Happy if any mood 
+	 */
+	@Test
+	public void messageAnyMood() {
+		String result = mood.analyseMood("I am in Any mood" );
+		Assert.assertEquals("HAPPY", result);
+	}
+
 }
